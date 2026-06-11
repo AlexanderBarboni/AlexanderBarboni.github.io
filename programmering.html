@@ -30,7 +30,24 @@
     </p>
   </div>
 </div>
-
+    
+<div class="header">
+  <div class="main-text header-text">
+    <p style="text-align:left;">
+      <a class="discrete-link" href="#Home">Home</a>
+      | <a class="discrete-link" href="#Project1">Apex Evolution</a>
+      | <a class="discrete-link" href="#Project2">Dice Prototype</a>
+      | <a class="discrete-link" href="#Project3">Kindread Spirits</a>
+      | <a class="discrete-link" href="#Project4">Neon Ascent</a>
+      <span style="float:right;">
+        <a class="discrete-link" href="programmering.html">Programming Portfolio</a> |
+        <a class="discrete-link" target="_blank" href="https://www.youtube.com/@alexanderbarboni">Sound Portfolio</a> |
+        <a class="discrete-link" href="mig.html">About me / Contact</a>
+      </span>
+    </p>
+  </div>
+</div>
+    
 <div id="Home">
 
   <div id="Project1" class="box">
@@ -72,7 +89,7 @@
 
         <div id="ApexTab2" class="tabcontent proj1">
           <h3>Enemies</h3>
-          <p>The enemies would come in swarms which instantly made it apparent they needed to handle movement that took both environment and other enemies into account. Boids instantly came to my mind as it would create more dynamic enemies that could split their squad moving around objects and still find their way towards the player. The game designer on the project desired more sophisticated path finding where the enemies could determine the shortest route when more intricate choke points were introduced into the level design. Instead of pivoting entirely to Flowfields we combined the two where the target weight could utilize the points from the flowfield or the player’s location depending on raycast between the entities.</p>
+          <p>The enemies would come in swarms which made it apparent they needed to handle movement that took both environment and other enemies into account. Boids instantly came to my mind as it would create more dynamic enemies that could split their squad moving around objects and still find their way towards the player. The game designer on the project desired more sophisticated path finding where the enemies could determine the shortest route when more intricate choke points were introduced into the level design. Instead of pivoting entirely to Flowfields we combined the two where the target weight could utilize the points from the flowfield or the player’s location depending on raycast between the entities.</p>
         </div>
 
         <div id="ApexTab3" class="tabcontent proj1">
@@ -176,7 +193,7 @@
         <!-- Tab content -->
         <div id="KindreadTab1" class="tabcontent proj3" style="display:block;">
           <h3>Souls</h3>
-          <p>The souls as a resource had some very distinct behaviours that instantly became suitable for a finite state machine. They would be idling around a point in the level where they could be picked up (proximity based) and then held by a player. When held by a player it was set to a position in the animation rig and each ability component recognized there was a resource to be utilized. When the soul was used the number was reduced and the soul was either in a shooting state, thrown state and eventually a return state where it rapidly moves back to the spot it was collected. The different states became vital when depending on the states needed to be able to interact with specific colliders whilst ignoring others, since the souls were to be passed between the players or shot at objects or buttons.</p>
+          <p>The souls as a resource had some very distinct behaviours that became suitable for a finite state machine. They would be idling around a point in the level where they could be picked up (proximity based) and then held by a player. When held by a player it was set to a position in the animation rig and each ability component recognized there was a resource to be utilized. When the soul was used the number was reduced and the soul was either in a shooting state, thrown state and eventually a return state where it rapidly moves back to the spot it was collected. The different states became vital when depending on the states needed to be able to interact with specific colliders whilst ignoring others, since the souls were to be passed between the players or shot at objects or buttons.</p>
         </div>
 
         <div id="KindreadTab2" class="tabcontent proj3">
@@ -205,8 +222,9 @@
         </div>
         <div class="col-sm-6">
           <div class="text-box">
-            Jump and dash your way higher in this infinite ascent upwards
-            My first ever project doing more than sound design and implementation. Being the sole programmer on this 2D endless jumping game I created all the systems and interactions except for some menu scripts.
+            The concept is simple enough: jump and dash your way higher and higher in this infinite ascent upwards, outpacing the deadly laser and reaching new high scores by living longer.
+My first ever project doing more than sound design and implementation. Being the sole programmer on this 2D endless jumping game I created all the systems and interactions except for some menu scripts. I also made the laser and the dissolve shaders.
+
 
           </div>
         </div>
@@ -219,16 +237,16 @@
         <!---TABS--->
         <!-- Tab links -->
         <div class="tab proj4">
-          <button class="tablinks active" onclick="openTab(event, 'NeonTab1')">Endless Level</button>
-          <button class="tablinks" onclick="openTab(event, 'NeonTab2')">Tab2</button>
+          <button class="tablinks active" onclick="openTab(event, 'NeonTab1')">Endless Level System</button>
+          <button class="tablinks" onclick="openTab(event, 'NeonTab2')">Visual Aspects Improving Gameplay</button>
         </div>
 
         <!-- Tab content -->
         <div id="NeonTab1" class="tabcontent proj4" style="display:block;">
-          <h3>Endless Level</h3>
-          <p>With the group being consistent of two game designers and one graphical artist, I wanted to enable the designers to work on their own so I designed a structure to instantiate prefab variants which they both could design segments simultaneously after deciding some core rules that sorts out the overlap between every segment so that they always will allow the player to
+          <h3>Endless Level System</h3>
+          <p>With the group being consistent of two game designers and one graphical artist, I wanted to enable the designers to work on their own so I designed a structure to instantiate prefab variants which they both could design segments simultaneously after deciding some core rules that sorts out the overlap between every segment so that they always will allow the player to continue the ascent. 
             <br><br>
-            and focus on aspects that fool the player into thinking how it is the same level parts they encounter
+            We wanted an increasing difficulty so I divided the prefabs into three difficulty tiers with lists consisting of the respective segments. Then the spawner would instantiate the first tier prefabs for X amount of times then moving onto the next tier-list. The same prefab could be instantiated several times but not back to back since we didn’t create enough segments to not re-use them in one run. Each segment is also randomized if it spawns in mirrored or not to provide double the content for each added segment. There are also randomized coins for bonus points that has several spawnpoints that encourages the player to choose different paths even though it will be the same segment previously encountered.
           </p>
         </div>
 
