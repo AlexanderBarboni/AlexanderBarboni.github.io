@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>About me</title>
+      <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script><link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <div class="fixed header">
+  <div class="main-text header-text">
+    <p style="text-align:left;">
+      <a class="discrete-link" href="#Home">Home</a>
+      <span style="float:right;">
+        <a class="discrete-link" href="programmering.html">Programming Portfolio</a> |
+        <a class="discrete-link" target="_blank" href="ljud.html">Sound Portfolio</a> |
+        <a class="discrete-link" href="mig.html">About me / Contact</a>
+      </span>
+    </p>
+  </div>
+</div>
+
+<div id="Home">
+
+  <div id="Project1" class="box">
+    <div class="main-text head-line">About me</div>
+    <div class="color-box">
+      <div class="row">
+        <div class="col-md-5 col-sm-6">
+          <!------LÄNKA TILL Alex.jpg (eller vad du nu döper bilden till)------>
+          <img class="fill-box" src="http://pre09.deviantart.net/4c54/th/pre/i/2014/186/f/2/rip_root_beer_guy_by_andiscissorhands-d7pdaut.jpg" alt="Picture of me">
+        </div>
+        <div class="col-md-7 col-sm-6">
+          <div class="text-box">
+            Hello hello!<br><br>
+            My name is Alexander Barboni, I’m 29 years old and I’ve been making games for 7 years now. I started out in audio but had my eyes opened for programming along the way. Two bachelor’s down the line, one in sound design and one in game programming, I now bring expertise in both fields when working on a game.
+
+            <br>
+          </div>
+        </div>
+      </div>
+      <!---TABS--->
+      <div class="no-color-box" style="background-color: white; margin-top:15px;">
+        <!-- Tab links -->
+        <div class="tab proj1">
+          <button class="tablinks" onclick="openTab(event, 'Tab2')">What are my aspirations?</button>
+          <button class="tablinks active" onclick="openTab(event, 'Tab1')">Why do I want to make games?</button>
+          <button class="tablinks" onclick="openTab(event, 'Tab3')">Interest outside of gaming?</button>
+          <button class="tablinks" onclick="openTab(event, 'Tab4')">Favorite games?</button>
+        </div>
+
+        <!-- Tab content -->
+        <div id="Tab1" class="tabcontent proj1" style="display:block;">
+          <h3>Why do I want to make games?</h3>
+          <p>
+            Games can be many things: escapism, a way to connect with others, art or just a fun pastime. The interactivity is of course at the forefront and no one would play a game that bores them. But all I know is that I wouldn’t have been the same person if my mom did not get that Xbox with Jet Set Radio Future back when I was 6. It’s almost like I just want to pay that experience forward to someone down the line. To my mom it was just “the game with an annoying soundtrack”, but to me it beautifully integrates and represents cultural aspects in a way that just seeps into your soul without you even thinking about it. Truly a masterpiece. Yeah I guess the long term goal is making a game that someone will gush about like this.</p>
+        </div>
+
+        <div id="Tab2" class="tabcontent proj1">
+          <h3>What are my aspirations?</h3>
+          <p>
+            I feel like I would feel at home at a workplace where I get to share my thoughts about the project and my input is considered; I don't want to be a cog in the wheel where my ideas are shut down by principle. Because working on games I’m passionate about is the dream, and being passionate means thinking about how to make the game better and wanting to discuss this in meaningful & realistic ways!
+            <br><br>
+            Being part of a team shouldn’t mean working on my own thing in my corner of the project, then waiting for someone to tell me what my next thing to work on is. Playing the game and thinking “Ooo, this would make it better!” should be a fun experience to share and workshop with others, not a disheartening feeling of “Just stick to your lane”. Game development is working with other people; having the ability to hear people out and discuss ideas to filter out what will benefit the game the most is key to a successful game, in my opinion.
+          </p>
+        </div>
+
+        <div id="Tab3" class="tabcontent proj1">
+          <h3>Interest outside of gaming?</h3>
+          <p>
+            Between learning to program from scratch, not getting too rusty with my sound design and actually finding time to play games there isn’t really a big hobby.. I do have a chronic case of buying cool t-shirts (and cardigans too, as of late) but outside of hereditary hoarding habits I enjoy long walks in nature to factory reset the brain. Dungeons and Dragons has been a great pleasure too, every once in a while when my forever DM is not working himself to death.</p>
+        </div>
+
+        <div id="Tab4" class="tabcontent proj1">
+          <h3>I’m glad you asked for my favorite games!</h3>
+          <p>
+            <b>Most Impactful:</b> Jet Set Radio Future<br>
+            <br>
+            <b>Best Multiplayer:</b> Heroes of the Storm, Hunt: Showdown 1896<br>
+            <br>
+            <b>Indie classics:</b> Blasphemous, Darkest Dungeon, Hollow Knight<br>
+            <b>Best FromSoftware:</b> Dark Souls 3 > Sekiro: Shadows Die Twice > Dark Souls > Bloodborne > Elden Ring > Dark Souls 2<br>
+          </p>
+        </div>
+        <!---end tabs--->
+      </div>
+      <!--end details-->
+    </div>
+  </div>
+
+</div>
+
+<div class="fixed footer">
+  <div class="main-text footer-text">
+    <p style="text-align:left;">
+      © Alexander Barboni
+      <span style="float:right;text-align:center;">
+        alexander.barboni@gmail.com | <a class="discrete-link" href="https://www.youtube.com/@alexanderbarboni">YouTube</a></span>
+    </p>
+  </div>
+</div>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
