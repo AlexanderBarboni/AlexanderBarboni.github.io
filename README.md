@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 
   <head>
@@ -29,25 +29,7 @@
       </span>
     </p>
   </div>
-</div>
-    
-<div class="header">
-  <div class="main-text header-text">
-    <p style="text-align:left;">
-      <a class="discrete-link" href="#Home">Home</a>
-      | <a class="discrete-link" href="#Project1">Apex Evolution</a>
-      | <a class="discrete-link" href="#Project2">Dice Prototype</a>
-      | <a class="discrete-link" href="#Project3">Kindread Spirits</a>
-      | <a class="discrete-link" href="#Project4">Neon Ascent</a>
-      <span style="float:right;">
-        <a class="discrete-link" href="programmering.html">Programming Portfolio</a> |
-        <a class="discrete-link" target="_blank" href="ljud.html">Sound Portfolio</a> |
-        <a class="discrete-link" href="mig.html">About me</a>
-      </span>
-    </p>
-  </div>
-</div>
-    
+</div>  
 <div id="Home">
 
   <div id="Project1" class="box">
