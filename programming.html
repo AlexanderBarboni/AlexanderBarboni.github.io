@@ -89,14 +89,14 @@
 
         <div id="ApexTab2" class="tabcontent proj1">
           <h3>Enemies</h3>
-          <p>The enemies would come in swarms which made it apparent they needed to handle movement that took both environment and other enemies into account. Boids instantly came to my mind as it would create more dynamic enemies that could split their squad moving around objects and still find their way towards the player. The game designer on the project desired more sophisticated path finding where the enemies could determine the shortest route when more intricate choke points were introduced into the level design. Instead of pivoting entirely to Flowfields we combined the two where the target weight could utilize the points from the flowfield or the player’s location depending on raycast between the entities.</p>
+          <p>The enemies would come in swarms which made it apparent they needed to handle movement that took both environment and other enemies into account. Boids instantly came to my mind as it would create more dynamic enemies that could split their squad moving around objects and still find their way towards the player. The game designer on the project desired more sophisticated path finding where the enemies could determine the shortest route when more intricate choke points were introduced into the level design. Instead of pivoting entirely to Flowfields we combined the two where the target weight could utilize the points from th e flowfield or the player’s location depending on raycast between the entities and the player.</p>
         </div>
 
         <div id="ApexTab3" class="tabcontent proj1">
           <h3>Juice & Feedback</h3>
-          <p>The feeling of being a big monster is at the core of the experience which the juice needs to convey. Ragdoll limbs that gets enabled in appropriate states and gets passed the velocity from the root hitbox adds a lot on its own, but the next step is factoring in the size difference between the player and the enemy.
+          <p>The feeling of being a big monster is at the core of the experience which the juice needs to convey. Enemy ragdoll limbs that gets enabled in appropriate states and gets passed the velocity from the root hitbox adds a lot on its own, but the next step is factoring in the size difference between the player and the enemy. The magnitude of the hit that applies to a ragdoll should be calculated by size and sometimes nulled entirely if the size difference is too vast. This is already implemented for the destructible objects!
             <br><br>
-            I made static managers for screen shakes (through the Cinemachine component), audio and time slowdown for cinematic hitstop effects that are easily called wherever necessary without coupling.
+            I also made static managers for screen shakes (through the Cinemachine component), audio and time slowdown for cinematic hitstop effects that are easily called wherever necessary without coupling.
           </p>
         </div>
 
